@@ -1,4 +1,7 @@
+// 1. Вывести строку в терминал
 console.log("Hello, World!")
+
+// 2. Создать переменную каждого типа
 
 let num = 43;
 let str = "some string type stuff";
@@ -14,6 +17,10 @@ let user = {
     age: 23
 }
 
+console.log(` ${num} \n ${str} \n ${undefVar}\n`, symbol, 
+`\n ${isAdmin} \n ${varNull} \n ${user}`)
+
+// Функция для вывода типа переменной в консоль, вместе с именем этой переменной
 const typeToConsole = (arr, arr2) => 
 {
     for (let index = 0; index < arr.length; index++) {
@@ -21,6 +28,7 @@ const typeToConsole = (arr, arr2) =>
     }
 }
 
+// 3. 
 console.log(typeof num);
 typeToConsole([str,num,undefVar,symbol,isAdmin, varNull, user], 
     ["str", "num", "undefVar", "symbol", "isAdmin", "varNull", "user"]);
