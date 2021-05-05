@@ -10,12 +10,7 @@ GearBox.prototype = {
         for (const el of gearBox) {
             el.innerHTML = this.gearBoxValue
         }
-        // processElements(gearBox, (item) => {
-        //     item.innerHTML = gearBoxValue
-
-        // })
-
-        // setTimeout(engineCrush, 5000);
+        
         const self = this.increaseGearBoxValue.bind(this, gearBox);
         gearBoxInterval = setInterval(self, 1000);
     }, 
